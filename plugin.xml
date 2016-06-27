@@ -28,7 +28,11 @@
                     <param name="ios-package" value="JPushPlugin"/>
                 </feature>
             </config-file>
-
+            <config-file target="*-Info.plist" parent="UIBackgroundModes">
+                <array>
+                    <string>remote-notification</string>
+                </array>
+            </config-file>
             <header-file src="src/ios/Plugins/JPushPlugin.h"/>
             <source-file src="src/ios/Plugins/JPushPlugin.m"/>
 
